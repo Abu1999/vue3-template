@@ -1,5 +1,6 @@
 // commitlint.config.cjs
 /** @type {import('cz-git').UserConfig} */
+// pnpm install -g commitizen 添加git-cz命令
 module.exports = {
   // 继承的规则
   extends: ['@commitlint/config-conventional'],
