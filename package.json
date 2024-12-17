@@ -43,5 +43,26 @@
     "vite": "^6.0.1",
     "vite-plugin-vue-devtools": "^7.6.5",
     "vue-tsc": "^2.1.10"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{cjs,json}": [
+      "prettier --write"
+    ],
+    "*.{vue,html}": [
+      "eslint --fix",
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.{scss,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
   }
 }
